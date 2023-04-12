@@ -1,23 +1,16 @@
 #include "main.h"
+#include <string.h>
+
 /**
- * _strpbrk - Entry point
- * @s: input
- * @accept: input
- * Return: Always 0 (Success)
+ * _strpbrk - the function
+ * @s: the main string
+ * @accept: the substring
+ * Return: brk
  */
+
 char *_strpbrk(char *s, char *accept)
 {
-	int k;
+	char *brk = strpbrk(s, accept);
 
-	while (*s)
-	{
-		for (k = 0; accept[k]; k++)
-		{
-		if (*s == accept[k])
-		return (s);
-		}
-	s++;
-	}
-
-return ('\0');
+	return (brk);
 }
