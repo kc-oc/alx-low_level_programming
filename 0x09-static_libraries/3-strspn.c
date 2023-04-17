@@ -1,28 +1,16 @@
 #include "main.h"
+#include <string.h>
+
 /**
- * _strspn - Entry point
- * @s: input
- * @accept: input
- * Return: Always 0 (Success)
+ * _strspn - returns length of accept in s
+ * @s: scanned string
+ * @accept: string containing characters to match
+ * Return: spn
  */
+
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int n = 0;
-	int r;
+	int spn = strspn(s, accept);
 
-	while (*s)
-	{
-		for (r = 0; accept[r]; r++)
-		{
-			if (*s == accept[r])
-			{
-				n++;
-				break;
-			}
-			else if (accept[r + 1] == '\0')
-				return (n);
-		}
-		s++;
-	}
-	return (n);
+	return (spn);
 }
