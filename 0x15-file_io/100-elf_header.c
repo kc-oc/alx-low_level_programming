@@ -18,7 +18,7 @@ void print_entry(unsigned long int e_entry, unsigned char *e_ident);
 void close_elf(int elf);
 
 /**
- * check_elf = This checks if a file is an ELF file.
+ * check_elf - This checks if a file is an ELF file.
  *
  * @e_ident: This is a pointer to an array containing the ELF magic numbers.
  *
@@ -68,7 +68,7 @@ void print_magic(unsigned char *e_ident)
 }
 
 /**
- * print_class = This is a prints the class of an ELF header.
+ * print_class - This is a prints the class of an ELF header.
  *
  * @e_ident: This a pointer to an array containing the ELF class.
  */
@@ -94,7 +94,7 @@ void print_class(unsigned char *e_ident)
 }
 
 /**
- * print_data = This prints the data of an ELF header.
+ * print_data - This prints the data of an ELF header.
  *
  * @e_ident: This is a pointer to an array containing the ELF class.
  */
@@ -187,9 +187,9 @@ void print_osabi(unsigned char *e_ident)
 }
 
 /**
- * print_abi = Prints the ABI version of an ELF header.
+ * print_abi - This prints the ABI version of an ELF header.
  *
- * @e_ident: A pointer to an array containing the ELF ABI version.
+ * @e_ident: This is a pointer to an array containing the ELF ABI version.
  */
 void print_abi(unsigned char *e_ident)
 {
@@ -198,7 +198,7 @@ void print_abi(unsigned char *e_ident)
 }
 
 /**
- * print_type = This prints the type of an ELF header.
+ * print_type - This prints the type of an ELF header.
  *
  * @e_type: The ELF type.
  *
@@ -235,7 +235,7 @@ void print_type(unsigned int e_type, unsigned char *e_ident)
 }
 
 /**
- * print_entry = This is prints the entry point of an ELF header.
+ * print_entry - This is prints the entry point of an ELF header.
  *
  * @e_entry: The address of the ELF entry point.
  *
@@ -261,7 +261,7 @@ void print_entry(unsigned long int e_entry, unsigned char *e_ident)
 }
 
 /**
- * close_elf = This closes an ELF file.
+ * close_elf -  This closes an ELF file.
  *
  * @elf: This is the file descriptor of the ELF file.
  *
