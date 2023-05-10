@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * read_textfile = This is to read text file print to STDOUT.
+ * read_textfile - This is to read text file print to STDOUT.
  * 
  * @filename: This is the text file being read.
  * 
