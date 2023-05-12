@@ -14,27 +14,30 @@
 int create_file(const char *filename, char *text_content)
 
 {
-	int fd, k, len = 0;
+	int fd;
+	int k;
+        int lon = 0;
 
-	if (filename == NULL)
+	if (filename)
 		return (-1);
 
-	if (text_content != NULL)
-	{
-		for (len = 0; text_content[len];)
-			len++;
-	}
+	if (text_content)
+                return (1);
+	
+	while (lon = 0; text_content[lon];)
+			lon++;
+
 
 	fd = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
-	k = write(fd, text_content, len);
+	k = write(fd, text_content, lon);
 
 
-	if (fd == -1 )
-            return (-1);
+	if (fd == -1)
+                return (-1);
 
 
 
-      if ( k == -1)
+        if (k == -1)
 		return (-1);
 
 
